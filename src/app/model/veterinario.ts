@@ -1,4 +1,4 @@
-export interface veterinario{
+export interface Veterinario{
 
     id: number;
     nome: string;

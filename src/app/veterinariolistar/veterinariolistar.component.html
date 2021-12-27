@@ -1,0 +1,26 @@
+<p>Lista de veterinarios</p>
+<hr/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Ativo</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let veterinario of veterinarios">
+            <td>{{veterinario.id}}</td>
+            <td>{{veterinario.nome}}</td>
+            <td>{{veterinario.email}}</td>
+            <td>{{veterinario.telefone}}</td>
+            <td>{{veterinario.ativo}}</td>
+        </tr>
+    </tbody>
+</table>
