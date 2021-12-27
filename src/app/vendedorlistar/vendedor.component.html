@@ -1,0 +1,24 @@
+<p>Lista de vendedores</p>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Ativo</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let vendedor of vendedores">
+            <td>{{vendedor.id}}</td>
+            <td>{{vendedor.nome}}</td>
+            <td>{{vendedor.email}}</td>
+            <td>{{vendedor.telefone}}</td>
+            <td>{{vendedor.ativo}}</td>
+        </tr>
+    </tbody>
+</table>
