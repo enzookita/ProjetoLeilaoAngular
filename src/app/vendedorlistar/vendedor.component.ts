@@ -14,6 +14,7 @@ export class VendedorComponent implements OnInit {
   constructor(private servicoVendedor: VendedorService) { }
 
   ngOnInit(): void {
+    
     this.servicoVendedor.listarVendedor().subscribe(
       data => {this.vendedores = data}
     )
