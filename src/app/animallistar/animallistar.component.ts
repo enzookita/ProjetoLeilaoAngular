@@ -9,14 +9,14 @@ import { AnimalService } from '../services/animal.service';
 })
 export class AnimallistarComponent implements OnInit {
 
-  animales: Animal[] = [];
+  Animales: Animal[] = [];
 
   constructor(private servicoAnimal: AnimalService) { }
 
   ngOnInit(): void {
 
     this.servicoAnimal.listarComprador().subscribe(
-      data => {this.animales = data}
+      data => {this.Animales = data}
       
     )
   }
