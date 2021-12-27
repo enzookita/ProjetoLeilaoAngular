@@ -8,5 +8,4 @@ export interface Animal{
     ativo: boolean;
     id_vendedor: number;
     id_veterinario: number;
-
 }
