@@ -1,0 +1,26 @@
+<p>Lista de compradores</p>
+<hr/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Ativo</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let comprador of compradores">
+            <td>{{comprador.id}}</td>
+            <td>{{comprador.nome}}</td>
+            <td>{{comprador.email}}</td>
+            <td>{{comprador.telefone}}</td>
+            <td>{{comprador.ativo}}</td>
+        </tr>
+    </tbody>
+</table>
