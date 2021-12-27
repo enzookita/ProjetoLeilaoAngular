@@ -1,0 +1,24 @@
+<p>Lista de leilaos</p>
+<hr/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>data</th>
+            <th>nome</th>
+            <th>Ativo</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let leilao of leilaos">
+            <td>{{leilao.id}}</td>
+            <td>{{leilao.data}}</td>
+            <td>{{leilao.nome}}</td>
+            <td>{{leilao.ativo}}</td>
+        </tr>
+    </tbody>
+</table>
