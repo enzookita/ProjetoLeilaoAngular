@@ -12,6 +12,7 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
 import { FormsModule } from '@angular/forms';
 import { CompradoralterarComponent } from './compradoralterar/compradoralterar.component';
+import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
 import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.component';
@@ -27,6 +28,7 @@ import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.comp
     LancelistarComponent,
     CompradorincluirComponent,
     CompradoralterarComponent,
+    LeilaoincluirComponent,
     VendedorincluirComponent,
     VeterinarioincluirComponent,
     VendedoralterarComponent
