@@ -12,6 +12,7 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
 import { FormsModule } from '@angular/forms';
 import { CompradoralterarComponent } from './compradoralterar/compradoralterar.component';
+import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CompradoralterarComponent } from './compradoralterar/compradoralterar.c
     LeilaolistarComponent,
     LancelistarComponent,
     CompradorincluirComponent,
-    CompradoralterarComponent
+    CompradoralterarComponent,
+    VendedorincluirComponent
   ],
   imports: [
     BrowserModule,

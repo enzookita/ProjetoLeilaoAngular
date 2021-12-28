@@ -12,8 +12,18 @@ export class VendedorService {
   constructor(private http: HttpClient) { }
 
   listarVendedor(): Observable<any>{
-
     return this.http.get<Vendedor>("http://localhost:8080/vendedor");
+  }
 
+  buscar( id: string ): Observable<Vendedor>{
+    return this.http.get<Vendedor>("http://localhost:8080/vendedor/" + id)
+  }
+
+  incluir(vendedor: Vendedor): Observable<Vendedor>{
+    return this.http.post<Vendedor>("http://localhost:8080/comprador", vendedor);
+  }
+
+  alterar(vendedor: Vendedor): Observable<Vendedor>{
+    return this.http.put<Vendedor>("http://localhost:8080/comprador", vendedor);
   }
 }
