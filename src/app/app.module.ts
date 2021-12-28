@@ -21,6 +21,7 @@ import { AnimalincluirComponent } from './animalincluir/animalincluir.component'
 import { AnimalalterarComponent } from './animalalterar/animalalterar.component';
 import { LancealterarComponent } from './lancealterar/lancealterar.component';
 import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
+import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
 
 
 @NgModule({
@@ -40,13 +41,14 @@ import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
     VendedoralterarComponent,
     VeterinarioincluirComponent,
     VeterinarioalterarComponent,
-    LeilaoincluirComponent,
     VendedorincluirComponent,
     VeterinarioincluirComponent,
     AnimalincluirComponent,
     AnimalalterarComponent,
     LancealterarComponent,
-    LanceincluirComponent
+    LanceincluirComponent,
+    LeilaoalterarComponent
+
   ],
   imports: [
     BrowserModule,
