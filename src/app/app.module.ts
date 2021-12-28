@@ -7,6 +7,7 @@ import { CompradorlistarComponent } from './compradorlistar/compradorlistar.comp
 import { AnimallistarComponent } from './animallistar/animallistar.component';
 import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
 import { VendedorComponent } from './vendedorlistar/vendedor.component';
+import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VendedorComponent } from './vendedorlistar/vendedor.component';
     CompradorlistarComponent,
     AnimallistarComponent,
     VeterinariolistarComponent,
-    VendedorComponent
+    VendedorComponent,
+    LeilaolistarComponent
   ],
   imports: [
     BrowserModule,
