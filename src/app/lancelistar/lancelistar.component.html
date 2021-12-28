@@ -1,0 +1,30 @@
+<p>Lista de Lances</p>
+<hr/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Ativo</th>
+            <th>idComprador</th>
+            <th>idLeilao</th>
+            <th>idAnimal</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let lance of lances">
+            <td>{{lance.id}}</td>
+            <td>{{lance.data}}</td>
+            <td>{{lance.valor}}</td>
+            <td>{{lance.ativo}}</td>
+            <td>{{lance.idComprador}}</td>
+            <td>{{lance.idLeilao}}</td>
+            <td>{{lance.idAnimal}}</td>
+        </tr>
+    </tbody>
+</table>

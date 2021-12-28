@@ -5,7 +5,7 @@ export interface Lance{
     data: Data;
     valor: Float32Array;
     ativo: boolean;
-    idComprador: Int32Array;
-    idLeilao: Int32Array;
-    idAnimal: Int32Array
+    idComprador: Number;
+    idLeilao: Number;
+    idAnimal: Number;
 }

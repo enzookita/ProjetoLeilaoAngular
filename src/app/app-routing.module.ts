@@ -5,6 +5,7 @@ import { CompradorlistarComponent } from './compradorlistar/compradorlistar.comp
 import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
 import { VendedorComponent } from './vendedorlistar/vendedor.component';
 import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
+import { LancelistarComponent } from './lancelistar/lancelistar.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: "animal", component: AnimallistarComponent},
   {path: "veterinario", component: VeterinariolistarComponent},
   {path: "vendedor", component: VendedorComponent},
-  {path: "leilao", component: LeilaolistarComponent}
+  {path: "leilao", component: LeilaolistarComponent},
+  {path: "lance", component: LancelistarComponent}
 ];
 
 @NgModule({
