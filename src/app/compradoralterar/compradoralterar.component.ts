@@ -11,28 +11,30 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CompradoralterarComponent implements OnInit {
 
-  comprador: Comprador = {id: 0,nome: '', email: '',  telefone: '',  ativo: false}
+  comprador: Comprador = { id: 0, nome: '', email: '', telefone: '', ativo: false }
 
-  constructor( private compradorServico: CompradorService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private compradorServico: CompradorService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     let id = this.route.snapshot.paramMap.get('id');
 
-    this.compradorServico.buscar( id + "" ).subscribe(
+    this.compradorServico.buscar(id + "").subscribe(
       dados => this.comprador = dados
     )
   }
 
-  alterar( frm: NgForm){
+  alterar(frm: NgForm) {
 
     this.compradorServico.alterar(this.comprador).subscribe(
 
-      dados =>  { alert("Registro alterado"),  
-          this.router.navigateByUrl("comprador")}
+      dados => {
+        alert("Registro alterado"),
+        this.router.navigateByUrl("comprador")
+      }
 
     )
 
-    
+
 
   }
 }
