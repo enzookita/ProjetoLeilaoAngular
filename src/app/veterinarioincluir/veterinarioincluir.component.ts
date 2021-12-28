@@ -11,7 +11,7 @@ import { VeterinarioService } from '../services/veterinario.service';
 })
 export class VeterinarioincluirComponent implements OnInit {
 
-  veterinario: Veterinario = {id: 0,nome: '', email: '',  telefone: '',  ativo: false}
+  veterinario: Veterinario = {id: 0, nome: '', email: '',  telefone: '',  ativo: false}
 
   constructor(private veterinarioService: VeterinarioService, private router: Router) { }
 

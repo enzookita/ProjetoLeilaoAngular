@@ -16,6 +16,8 @@ import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component'
 import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.component';
+import { VeterinarioalterarComponent } from './veterinarioalterar/veterinarioalterar.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,12 @@ import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.comp
     LeilaoincluirComponent,
     VendedorincluirComponent,
     VeterinarioincluirComponent,
-    VendedoralterarComponent
+    VendedoralterarComponent,
+    VeterinarioincluirComponent,
+    VeterinarioalterarComponent,
+    LeilaoincluirComponent,
+    VendedorincluirComponent,
+    VeterinarioincluirComponent
   ],
   imports: [
     BrowserModule,
