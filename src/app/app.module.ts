@@ -15,7 +15,12 @@ import { CompradoralterarComponent } from './compradoralterar/compradoralterar.c
 import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
 import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
+<<<<<<< HEAD
 import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
+=======
+import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.component';
+import { VeterinarioalterarComponent } from './veterinarioalterar/veterinarioalterar.component';
+>>>>>>> 4264f56192673ca57459eec57b7da399754004f2
 
 
 @NgModule({
@@ -30,10 +35,21 @@ import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component'
     CompradorincluirComponent,
     CompradoralterarComponent,
     LeilaoincluirComponent,
+<<<<<<< HEAD
     VendedorincluirComponent,
     VeterinarioincluirComponent,
     LeilaoalterarComponent
 
+=======
+    VendedorincluirComponent,
+    VeterinarioincluirComponent,
+    VendedoralterarComponent,
+    VeterinarioincluirComponent,
+    VeterinarioalterarComponent,
+    LeilaoincluirComponent,
+    VendedorincluirComponent,
+    VeterinarioincluirComponent
+>>>>>>> 4264f56192673ca57459eec57b7da399754004f2
   ],
   imports: [
     BrowserModule,
