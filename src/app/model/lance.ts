@@ -3,7 +3,7 @@ import { Data } from "@angular/router";
 export interface Lance{
     id: Number;
     data: Data;
-    valor: Float32Array;
+    valor: number;
     ativo: boolean;
     idComprador: Number;
     idLeilao: Number;
