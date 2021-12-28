@@ -15,4 +15,16 @@ export class VeterinarioService {
     return this.http.get<Veterinario>("http://localhost:8080/veterinario");
 
   }
+
+  buscar( id: string  ): Observable<Veterinario>{
+    return this.http.get<Veterinario>("http://localhost:8080/veterinario/" + id);
+  }
+
+  incluir(veterinario: Veterinario): Observable<Veterinario>{
+    return this.http.post<Veterinario>("http://localhost:8080/veterinario", veterinario);
+  }
+  
+  alterar(veterinario: Veterinario): Observable<Veterinario>{
+    return this.http.put<Veterinario>("http://localhost:8080/veterinario", veterinario);
+  }
 }

@@ -8,12 +8,14 @@ import { VeterinariolistarComponent } from './veterinariolistar/veterinariolista
 import { VendedorComponent } from './vendedorlistar/vendedor.component';
 import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
+import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 
 
 const routes: Routes = [
   {path: "comprador", component:CompradorlistarComponent},
   {path: "animal", component: AnimallistarComponent},
   {path: "veterinario", component: VeterinariolistarComponent},
+  {path: "veterinarioincluir", component: VeterinarioincluirComponent},
   {path: "vendedor", component: VendedorComponent},
   {path: "leilao", component: LeilaolistarComponent},
   {path: "lance", component: LancelistarComponent},
