@@ -8,6 +8,7 @@ import { Lance } from '../model/lance';
   providedIn: 'root'
 })
 export class LanceService {
+  
 
   constructor( private http: HttpClient) { }
 
@@ -15,5 +16,17 @@ export class LanceService {
 
     return this.http.get<Lance>("http://localhost:8080/lance");
 
+  }
+  
+  buscar( id: string  ): Observable<Lance>{
+    return this.http.get<Lance>("http://localhost:8080/lance/" + id);
+  }
+
+  incluir(lance: Lance): Observable<Lance>{
+    return this.http.post<Lance>("http://localhost:8080/lance", lance);
+  }
+  
+  alterar(lance: Lance): Observable<Lance>{
+    return this.http.put<Lance>("http://localhost:8080/lance", lance);
   }
 }
