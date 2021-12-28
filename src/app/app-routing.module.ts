@@ -17,6 +17,7 @@ import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component'
 import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
 import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
 import { LancealterarComponent } from './lancealterar/lancealterar.component';
+import { AnimalincluirComponent } from './animalincluir/animalincluir.component';
 
 
 const routes: Routes = [
