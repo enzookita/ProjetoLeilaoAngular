@@ -10,19 +10,41 @@ import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 import { VeterinarioalterarComponent } from './veterinarioalterar/veterinarioalterar.component';
+import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
+import { AnimalalterarComponent } from './animalalterar/animalalterar.component';
+import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.component';
+import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
+import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
+import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
+import { LancealterarComponent } from './lancealterar/lancealterar.component';
 
 
 const routes: Routes = [
-  {path: "comprador", component:CompradorlistarComponent},
+  
   {path: "animal", component: AnimallistarComponent},
+  {path: "animalincluir", component: AnimalincluirComponent},
+  {path: "animalalterar/:id", component: AnimalalterarComponent},
+
   {path: "veterinario", component: VeterinariolistarComponent},
   {path: "veterinarioincluir", component: VeterinarioincluirComponent},
   {path: "veterinarioalterar/:id", component: VeterinarioalterarComponent},
+
   {path: "vendedor", component: VendedorComponent},
+  {path: "vendedorincluir", component: VendedorincluirComponent},
+  {path: "vendedoralterar/:id", component: VendedoralterarComponent},
+
   {path: "leilao", component: LeilaolistarComponent},
+  {path: "leilaoincluir", component: LeilaoincluirComponent},
+  {path: "leilaoalterar/:id ", component: LeilaoalterarComponent},
+
+
   {path: "lance", component: LancelistarComponent},
+  {path: "lanceincluir", component: LanceincluirComponent},
+  {path: "lancealterar/:id", component: LancealterarComponent},
+
+  {path: "comprador", component:CompradorlistarComponent},
   {path: "compradorincluir", component: CompradorincluirComponent},
-  { path: 'compradoralterar/:id', component: CompradoralterarComponent }
+  {path: 'compradoralterar/:id', component: CompradoralterarComponent }
 ];
 
 @NgModule({

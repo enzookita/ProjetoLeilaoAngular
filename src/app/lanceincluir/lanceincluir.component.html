@@ -1,0 +1,40 @@
+<p>Incluir Lance</p>
+
+<form method="POST" #frm="ngForm" (ngSubmit)="incluir(frm)" >
+
+<div>
+    
+    <div class="form-group">
+        
+        <label for="data">Data:</label>
+        <input type="text" name="data" id="data" class="form-control" [(ngModel)]="lance.data" />
+
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor" class="form-control"  [(ngModel)]="lance.valor" />
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="ativo" name="ativo" checked  [(ngModel)]="lance.ativo">
+            <label class="form-check-label" for="flexCheckChecked">
+              Ativo
+            </label>
+        </div>
+
+        <label for="IdComprador">IdComprador:</label>
+        <input type="text" name="idComprador" id="idComprador" class="form-control"  [(ngModel)]="lance.idComprador" />
+        <br/>
+
+        <label for="IdLeilao">IdLeilao:</label>
+        <input type="text" name="idLeilao" id="id]" class="form-control"  [(ngModel)]="lance.idLeilao" />
+        <br/>
+
+        <label for="IdAnimal">IdAnimal:</label>
+        <input type="text" name="IdAnimal" id="IdAnimal" class="form-control"  [(ngModel)]="lance.idAnimal" />
+        <br/>
+
+<br/>
+<br/>
+        <input type="submit" value="Enviar">
+
+    </div>
+</div>
+</form>
