@@ -12,12 +12,11 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
 import { FormsModule } from '@angular/forms';
 import { CompradoralterarComponent } from './compradoralterar/compradoralterar.component';
-<<<<<<< HEAD
 import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
-=======
 import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
->>>>>>> 346d3c0fb8b366b5b20e1e5b2c6185fd4a562aca
+import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
+
 
 @NgModule({
   declarations: [
@@ -30,12 +29,11 @@ import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioinc
     LancelistarComponent,
     CompradorincluirComponent,
     CompradoralterarComponent,
-<<<<<<< HEAD
-    LeilaoincluirComponent
-=======
+    LeilaoincluirComponent,
     VendedorincluirComponent,
-    VeterinarioincluirComponent
->>>>>>> 346d3c0fb8b366b5b20e1e5b2c6185fd4a562aca
+    VeterinarioincluirComponent,
+    LeilaoalterarComponent
+
   ],
   imports: [
     BrowserModule,
