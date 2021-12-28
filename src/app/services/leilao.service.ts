@@ -10,7 +10,11 @@ export class LeilaoService {
   constructor( private http: HttpClient) { }
   
   listarLeilao(): Observable<any>{
-
     return this.http.get<Leilao>("http://localhost:8080/leilao");
 }
+incluir(leilao: Leilao): Observable<Leilao>{
+  return this.http.post<Leilao>("http://localhost:8080/leilao", leilao);
+}
+
+
 }
