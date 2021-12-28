@@ -10,7 +10,7 @@ export class AnimalService {
 
   constructor( private http: HttpClient) { }
   
-  listarComprador(): Observable<any>{
+  listaAnimal(): Observable<any>{
 
     return this.http.get<Animal>("http://localhost:8080/animal");
 

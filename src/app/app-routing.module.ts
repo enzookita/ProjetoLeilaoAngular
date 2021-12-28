@@ -17,13 +17,15 @@ import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component'
 import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
 import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
 import { LancealterarComponent } from './lancealterar/lancealterar.component';
+import { AnimalincluirComponent } from './animalincluir/animalincluir.component';
 
 
 const routes: Routes = [
   
   {path: "animal", component: AnimallistarComponent},
-  {path: "animalincluir", component: AnimalincluirComponent},
   {path: "animalalterar/:id", component: AnimalalterarComponent},
+  {path: "animalincluir", component: AnimalincluirComponent},
+
 
   {path: "veterinario", component: VeterinariolistarComponent},
   {path: "veterinarioincluir", component: VeterinarioincluirComponent},

@@ -17,8 +17,10 @@ import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.comp
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.component';
 import { VeterinarioalterarComponent } from './veterinarioalterar/veterinarioalterar.component';
-import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
+import { AnimalincluirComponent } from './animalincluir/animalincluir.component';
+import { AnimalalterarComponent } from './animalalterar/animalalterar.component';
 import { LancealterarComponent } from './lancealterar/lancealterar.component';
+import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
 
 
 @NgModule({
@@ -32,8 +34,6 @@ import { LancealterarComponent } from './lancealterar/lancealterar.component';
     LancelistarComponent,
     CompradorincluirComponent,
     CompradoralterarComponent,
-    LanceincluirComponent,
-    LancealterarComponent,
     LeilaoincluirComponent,
     VendedorincluirComponent,
     VeterinarioincluirComponent,
@@ -42,7 +42,11 @@ import { LancealterarComponent } from './lancealterar/lancealterar.component';
     VeterinarioalterarComponent,
     LeilaoincluirComponent,
     VendedorincluirComponent,
-    VeterinarioincluirComponent
+    VeterinarioincluirComponent,
+    AnimalincluirComponent,
+    AnimalalterarComponent,
+    LancealterarComponent,
+    LanceincluirComponent
   ],
   imports: [
     BrowserModule,
