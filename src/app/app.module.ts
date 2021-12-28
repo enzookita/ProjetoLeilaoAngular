@@ -12,8 +12,21 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
 import { FormsModule } from '@angular/forms';
 import { CompradoralterarComponent } from './compradoralterar/compradoralterar.component';
+<<<<<<< HEAD
 import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
 import { LancealterarComponent } from './lancealterar/lancealterar.component';
+=======
+import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
+import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
+import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
+<<<<<<< HEAD
+import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
+=======
+import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.component';
+import { VeterinarioalterarComponent } from './veterinarioalterar/veterinarioalterar.component';
+>>>>>>> 4264f56192673ca57459eec57b7da399754004f2
+
+>>>>>>> d98f09f70961dcc40f5d092421b4ffb654add3a5
 
 @NgModule({
   declarations: [
@@ -26,8 +39,27 @@ import { LancealterarComponent } from './lancealterar/lancealterar.component';
     LancelistarComponent,
     CompradorincluirComponent,
     CompradoralterarComponent,
+<<<<<<< HEAD
     LanceincluirComponent,
     LancealterarComponent
+=======
+    LeilaoincluirComponent,
+<<<<<<< HEAD
+    VendedorincluirComponent,
+    VeterinarioincluirComponent,
+    LeilaoalterarComponent
+
+=======
+    VendedorincluirComponent,
+    VeterinarioincluirComponent,
+    VendedoralterarComponent,
+    VeterinarioincluirComponent,
+    VeterinarioalterarComponent,
+    LeilaoincluirComponent,
+    VendedorincluirComponent,
+    VeterinarioincluirComponent
+>>>>>>> 4264f56192673ca57459eec57b7da399754004f2
+>>>>>>> d98f09f70961dcc40f5d092421b4ffb654add3a5
   ],
   imports: [
     BrowserModule,

@@ -16,7 +16,7 @@ export class LeilaolistarComponent implements OnInit {
 
     this.servicoLeilao.listarLeilao().subscribe(
       data => {this.leilaos = data}
-      
+
     )
   }
 }
