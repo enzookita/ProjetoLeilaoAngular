@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { CompradoralterarComponent } from './compradoralterar/compradoralterar.component';
+import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AnimallistarComponent } from './animallistar/animallistar.component';
 import { CompradorlistarComponent } from './compradorlistar/compradorlistar.component';
@@ -14,7 +16,9 @@ const routes: Routes = [
   {path: "veterinario", component: VeterinariolistarComponent},
   {path: "vendedor", component: VendedorComponent},
   {path: "leilao", component: LeilaolistarComponent},
-  {path: "lance", component: LancelistarComponent}
+  {path: "lance", component: LancelistarComponent},
+  {path: "compradorincluir", component: CompradorincluirComponent},
+  { path: 'compradoralterar/:id', component: CompradoralterarComponent }
 ];
 
 @NgModule({

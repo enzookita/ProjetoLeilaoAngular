@@ -9,6 +9,9 @@ import { VeterinariolistarComponent } from './veterinariolistar/veterinariolista
 import { VendedorComponent } from './vendedorlistar/vendedor.component';
 import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
+import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
+import { FormsModule } from '@angular/forms';
+import { CompradoralterarComponent } from './compradoralterar/compradoralterar.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +21,15 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
     VeterinariolistarComponent,
     VendedorComponent,
     LeilaolistarComponent,
-    LancelistarComponent
+    LancelistarComponent,
+    CompradorincluirComponent,
+    CompradoralterarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
