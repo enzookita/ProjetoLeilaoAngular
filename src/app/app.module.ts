@@ -42,6 +42,7 @@ import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component'
     VeterinarioalterarComponent,
     VendedorincluirComponent,
     VeterinarioincluirComponent,
+    LeilaolistarComponent,
     LeilaoalterarComponent
   ],
   imports: [
