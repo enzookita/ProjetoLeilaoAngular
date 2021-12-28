@@ -6,6 +6,6 @@ export interface Animal{
     preco: number;
     raca: string;
     ativo: boolean;
-    id_vendedor: number;
-    id_veterinario: number;
+    idVendedor: number;
+    idVeterinario: number;
 }
