@@ -31,9 +31,7 @@ export class VendedorincluirComponent implements OnInit {
             alert(value);
           });
         }
-        this.router.navigateByUrl("vendedor")
-      },
-      error => console.log(error)
+      }
     )
   }
 
