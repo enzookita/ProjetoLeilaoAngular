@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Vendedor } from '../model/vendedor';
 import { VendedorService } from '../services/vendedor.service';
+import { Mensagem } from '../model/mensagem';
 
 @Component({
   selector: 'app-vendedorincluir',
@@ -11,16 +12,27 @@ import { VendedorService } from '../services/vendedor.service';
 })
 export class VendedorincluirComponent implements OnInit {
 
-  vendedor: Vendedor = {id: 0,nome: '', email: '',  telefone: '',  ativo: false}
+  mensagem: Mensagem = { mensagem: "", erro: [] }
+  vendedor: Vendedor = { id: 0, nome: '', email: '', telefone: '', ativo: false }
   constructor(private vendedorService: VendedorService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  incluir (frm: NgForm) {
+  incluir(frm: NgForm) {
     this.vendedorService.incluir(this.vendedor).subscribe(
-      dados => {alert("Vendedor cadastrado com sucesso"),
-                this.router.navigateByUrl("vendedor")},
+      dados => {
+        this.mensagem = dados
+        alert(this.mensagem.mensagem)
+        if (this.mensagem.erro.length == 0) {
+          this.router.navigateByUrl("vendedor");
+        } else {
+          this.mensagem.erro.forEach(function (value) {
+            alert(value);
+          });
+        }
+        this.router.navigateByUrl("vendedor")
+      },
       error => console.log(error)
     )
   }
