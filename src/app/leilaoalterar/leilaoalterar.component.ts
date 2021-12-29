@@ -28,7 +28,7 @@ export class LeilaoalterarComponent implements OnInit {
     this.leilaoServico.alterar(this.leilao).subscribe(
 
       dados =>  { alert("Registro alterado"),  
-          this.router.navigateByUrl("comprador")}
+          this.router.navigateByUrl("leilao")}
 
     )
 
