@@ -1,4 +1,3 @@
-import { error } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -23,8 +22,7 @@ export class LanceincluirComponent implements OnInit {
     this.lanceService.incluir( this.lance).subscribe(
       dados => { alert("Comprador cadastrado com sucesso"),
                  this.router.navigateByUrl("lance")
-                },
-      error => console.log(error)
+                }
     )
   }
 

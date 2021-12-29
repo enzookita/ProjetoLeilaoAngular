@@ -16,5 +16,12 @@ incluir(leilao: Leilao): Observable<Leilao>{
   return this.http.post<Leilao>("http://localhost:8080/leilao", leilao);
 }
 
+alterar(leilao: Leilao): Observable<Leilao>{
+  return this.http.put<Leilao>("http://localhost:8080/leilao", leilao);
+}
+
+buscar( id: string  ): Observable<Leilao>{
+  return this.http.get<Leilao>("http://localhost:8080/comprador/" + id);
+}
 
 }

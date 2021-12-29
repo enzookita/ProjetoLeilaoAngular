@@ -10,9 +10,21 @@ export class AnimalService {
 
   constructor( private http: HttpClient) { }
   
-  listarComprador(): Observable<any>{
+  listaAnimal(): Observable<any>{
 
     return this.http.get<Animal>("http://localhost:8080/animal");
 
+  }
+
+  buscar( id: string  ): Observable<Animal>{
+    return this.http.get<Animal>("http://localhost:8080/animal/" + id);
+  }
+
+  incluir(animal: Animal): Observable<Animal>{
+    return this.http.post<Animal>("http://localhost:8080/animal", animal);
+  }
+  
+  alterar(animal: Animal): Observable<Animal>{
+    return this.http.put<Animal>("http://localhost:8080/animal", animal);
   }
 }
