@@ -45,6 +45,7 @@ import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component'
     AnimalalterarComponent,
     AnimalincluirComponent,
     LeilaoalterarComponent,
+    VendedorComponent
 
     
   ],
