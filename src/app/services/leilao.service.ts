@@ -21,7 +21,7 @@ alterar(leilao: Leilao): Observable<Leilao>{
 }
 
 buscar( id: string  ): Observable<Leilao>{
-  return this.http.get<Leilao>("http://localhost:8080/comprador/" + id);
+  return this.http.get<Leilao>("http://localhost:8080/leilao/" + id);
 }
 
 }

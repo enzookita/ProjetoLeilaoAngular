@@ -37,9 +37,8 @@ const routes: Routes = [
 
   {path: "leilao", component: LeilaolistarComponent},
   {path: "leilaoincluir", component: LeilaoincluirComponent},
-  {path: "leilaoalterar/:id ", component: LeilaoalterarComponent},
-
-
+  {path: "leilaoalterar/:id", component: LeilaoalterarComponent},
+  
   {path: "lance", component: LancelistarComponent},
   {path: "lanceincluir", component: LanceincluirComponent},
   {path: "lancealterar/:id", component: LancealterarComponent},

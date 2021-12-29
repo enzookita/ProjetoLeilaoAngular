@@ -22,6 +22,7 @@ import { VeterinarioalterarComponent } from './veterinarioalterar/veterinarioalt
 import { AnimalalterarComponent } from './animalalterar/animalalterar.component';
 import { AnimalincluirComponent } from './animalincluir/animalincluir.component';
 import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
+import { LeilaoaltComponent } from './leilaoalt/leilaoalt.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component'
     VeterinarioincluirComponent,
     AnimalalterarComponent,
     AnimalincluirComponent,
-    LeilaoalterarComponent
+    LeilaoalterarComponent,
+    LeilaoaltComponent
     
   ],
   imports: [
