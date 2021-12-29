@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Mensagem } from '../model/mensagem';
 import { Veterinario } from '../model/veterinario';
 import { VeterinarioService } from '../services/veterinario.service';
 
@@ -11,6 +12,8 @@ import { VeterinarioService } from '../services/veterinario.service';
 })
 export class VeterinarioincluirComponent implements OnInit {
 
+  mensagem: Mensagem = {mensagem: "", erro: []};
+
   veterinario: Veterinario = {id: 0, nome: '', email: '',  telefone: '',  ativo: false}
 
   constructor(private veterinarioService: VeterinarioService, private router: Router) { }
@@ -20,10 +23,17 @@ export class VeterinarioincluirComponent implements OnInit {
 
   incluir( frm: NgForm){
     this.veterinarioService.incluir( this.veterinario).subscribe(
-      dados => { alert("veterinario cadastrado com sucesso"),
-                 this.router.navigateByUrl("veterinario")
-                },
-      error => console.log(error)
+      dados => { this.mensagem = dados
+                  alert( this.mensagem.mensagem )
+                  if (this.mensagem.erro.length == 0){
+                    this.router.navigateByUrl("veterinario");
+
+                  } else {
+                    this.mensagem.erro.forEach(function (value) {
+                      alert(value);
+                    }); 
+                  }
+                }
     )
   }
 
