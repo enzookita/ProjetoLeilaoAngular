@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Lance } from '../model/lance';
+import { Mensagem } from '../model/mensagem';
 
 @Injectable({
   providedIn: 'root'
@@ -21,11 +22,11 @@ export class LanceService {
     return this.http.get<Lance>("http://localhost:8080/lance/" + id);
   }
 
-  incluir(lance: Lance): Observable<Lance>{
-    return this.http.post<Lance>("http://localhost:8080/lance", lance);
+  incluir(lance: Lance): Observable<Mensagem>{
+    return this.http.post<Mensagem>("http://localhost:8080/lance", lance);
   }
   
-  alterar(lance: Lance): Observable<Lance>{
-    return this.http.put<Lance>("http://localhost:8080/lance", lance);
+  alterar(lance: Lance): Observable<Mensagem>{
+    return this.http.put<Mensagem>("http://localhost:8080/lance", lance);
   }
 }

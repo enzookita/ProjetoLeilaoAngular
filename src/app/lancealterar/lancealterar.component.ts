@@ -11,7 +11,7 @@ import { LanceService } from '../services/lance.service';
 })
 export class LancealterarComponent implements OnInit {
 
-  lance: Lance = {id: 0, data:{} , valor: 0, ativo: false, idComprador: 0, idLeilao: 0, idAnimal: 0}
+  lance: Lance = {id: 0, data: new Date , valor: 0, ativo: false, idComprador: 0, idLeilao: 0, idAnimal: 0}
 
   constructor( private lanceServico: LanceService, private route: ActivatedRoute, private router: Router) { }
 

@@ -1,8 +1,7 @@
-import { Data } from "@angular/router";
 
 export interface Lance{
     id: Number;
-    data: Data;
+    data: Date;
     valor: Number;
     ativo: boolean;
     idComprador: Number;
